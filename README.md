@@ -1,1 +1,1 @@
-This file contains HTML and JavaScript code for a calculator.
+This file contains HTML, CSS and JavaScript code for a calculator.
