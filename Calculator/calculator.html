@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+  <div class="container">
+    <div id="calculationDisplay" class="calculationDisplay"></div>
+  <p>
+    <button class="number-button" onclick="
+      calculation+='1';
+      document.getElementById('calculationDisplay').innerText = calculation;
+      ">1
+    </button>
+    <button class="number-button" onclick="
+      calculation+='2';
+      document.getElementById('calculationDisplay').innerText = calculation;
+    ">2
+    </button>
+  <button class="number-button" onclick="
+      calculation+='3';
+      document.getElementById('calculationDisplay').innerText = calculation;
+  ">3
+  </button>
+  <button class="calculation-button" onclick="
+    calculation+=' + ';
+    document.getElementById('calculationDisplay').innerText = calculation;
+  ">+
+  </button>
+  </p>
+
+  <p>
+    <button class="number-button" onclick="
+      calculation+='4';
+      document.getElementById('calculationDisplay').innerText = calculation;
+      ">4
+    </button>
+    <button class="number-button" onclick="
+      calculation+='5';
+      document.getElementById('calculationDisplay').innerText = calculation;
+    ">5
+    </button>
+  <button class="number-button" onclick="
+      calculation+='6';
+      document.getElementById('calculationDisplay').innerText = calculation;
+  ">6
+  </button>
+  <button class="calculation-button" onclick="
+    calculation+=' - ';
+    document.getElementById('calculationDisplay').innerText = calculation;
+  ">-
+  </button>
+  </p>
+
+  <p>
+    <button class="number-button" onclick="
+      calculation+='7';
+      document.getElementById('calculationDisplay').innerText = calculation;
+      ">7
+    </button>
+    <button class="number-button" onclick="
+      calculation+='8';
+      console.log(calculation);
+    ">8
+    </button>
+  <button class="number-button" onclick="
+      calculation+='9';
+      document.getElementById('calculationDisplay').innerText = calculation;
+  ">9
+  </button>
+  <button class="calculation-button" onclick="
+    calculation+=' * ';
+    document.getElementById('calculationDisplay').innerText = calculation;
+  ">*
+  </button>
+  </p>
+
+  <p>
+    <button class="number-button" onclick="
+        calculation+='0';
+        document.getElementById('calculationDisplay').innerText = calculation;
+    ">0
+    </button>
+    <button class="calculation-button" onclick="
+        calculation+=' . ';
+        document.getElementById('calculationDisplay').innerText = calculation;
+    ">.
+    </button>
+    
+    <button class="equal-to-button" onclick="
+    calculation = eval(calculation);
+    document.getElementById('calculationDisplay').innerText = calculation;
+    ">=
+    </button>
+
+    <button class="calculation-button" onclick="
+    calculation+=' / ';
+    document.getElementById('calculationDisplay').innerText = calculation;
+  ">/
+  </button>
+    
+  </p>
+
+  <p>
+    <button class="clear-button" onclick="
+      calculation = ' ';
+      document.getElementById('calculationDisplay').innerText = ' ';
+      ">Clear</button>
+  
+    <button class="clear-button" onclick="
+      calculation = calculation.slice(0, -1);
+      document.getElementById('calculationDisplay').innerText = calculation;
+      ">DEL</button>
+  </p>
+</div>
+  <script>
+    let calculation = "";
+  </script>
+  </body>
+</html>
